@@ -4,7 +4,7 @@ using System.Web;
 Console.WriteLine("started");
 if (args.Length is not 0 && args[0].StartsWith("cexec:"))
 {
-    Process.Start("explorer.exe", HttpUtility.UrlDecode(args[0][6..]));
+    Process.Start(HttpUtility.UrlDecode(args[0][6..]));
 }
 else
 {
