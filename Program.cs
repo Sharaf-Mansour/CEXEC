@@ -16,7 +16,6 @@ if (args.Length is not 0 && args[0].StartsWith("cexec:"))
     };
     Process process = new() { StartInfo = processStartInfo };
     process.Start();
-    process.WaitForExit();
 }
 else
 {
